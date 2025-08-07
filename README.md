@@ -100,16 +100,16 @@ roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 roslaunch px4 posix_sitl.launch
 ```
 
-- Train the EG-HDRL strategy:
+- 🧠 Train the EG-HDRL strategy:
 
 ```bash
-python train.py --env UAVDockingEnv --algo EG-HDRL --episodes 500
+python main.py --render False --write True --Loadmodel False
 ```
 
-- Evaluate the trained policy:
+- ✅ Evaluate the trained policy:
 
 ```bash
-python evaluate.py --model EG-HDRL/model/eg_hdrl_best.pth
+python main.py --render True --Loadmodel True --ModelIdex 2700
 ```
 
 ---
