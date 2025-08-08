@@ -83,7 +83,7 @@ cp gym_env/*.py ~/.local/lib/python3.8/site-packages/gym/envs/classic_control/
 - Place the YOLO11N model checkpoint in the appropriate path:
 
 ```python
-yolo = torch.load("LC_YOLO11n(OBB)/best.pt")
+self.yolo_model_path = "LC_YOLO11n(OBB)/best.pt"
 ```
 
 Make sure the `drone_env_wind.py` file loads it correctly during initialization.
